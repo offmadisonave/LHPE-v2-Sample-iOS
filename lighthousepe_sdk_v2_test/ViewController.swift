@@ -45,6 +45,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             // Enable any of your app's location features
             //enableMyAlwaysFeatures()
             Lighthouse.setAllowsLocation(true) { (success: Bool, error: Error?) in
+                Lighthouse.startBeaconing()
                 print("Updated LHPE allows location")
             }
             break
