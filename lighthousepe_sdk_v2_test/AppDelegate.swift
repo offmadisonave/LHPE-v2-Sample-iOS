@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LighthouseKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -12,6 +12,7 @@
 		C39E84B5228C458A00685652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B3228C458A00685652 /* Main.storyboard */; };
 		C39E84B7228C458D00685652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B6228C458D00685652 /* Assets.xcassets */; };
 		C39E84BA228C458D00685652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B8228C458D00685652 /* LaunchScreen.storyboard */; };
+		C39E84C3228C472700685652 /* LighthouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C39E84B9228C458D00685652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39E84BB228C458D00685652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39E84C1228C460500685652 /* lighthousepe_sdk_v2_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lighthousepe_sdk_v2_test.entitlements; sourceTree = "<group>"; };
+		C39E84C2228C472700685652 /* LighthouseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LighthouseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39E84C3228C472700685652 /* LighthouseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +42,7 @@
 		C39E84A3228C458A00685652 = {
 			isa = PBXGroup;
 			children = (
+				C39E84C2228C472700685652 /* LighthouseKit.framework */,
 				C39E84AE228C458A00685652 /* lighthousepe_sdk_v2_test */,
 				C39E84AD228C458A00685652 /* Products */,
 			);
@@ -295,6 +299,10 @@
 				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K3WVV4RQH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = lighthousepe_sdk_v2_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +322,10 @@
 				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K3WVV4RQH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = lighthousepe_sdk_v2_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
