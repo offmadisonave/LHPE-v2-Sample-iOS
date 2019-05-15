@@ -12,8 +12,23 @@
 		C39E84B5228C458A00685652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B3228C458A00685652 /* Main.storyboard */; };
 		C39E84B7228C458D00685652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B6228C458D00685652 /* Assets.xcassets */; };
 		C39E84BA228C458D00685652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B8228C458D00685652 /* LaunchScreen.storyboard */; };
-		C39E84C3228C472700685652 /* LighthouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; };
+		C39E84D8228C4F7B00685652 /* LighthouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; };
+		C39E84D9228C4F7B00685652 /* LighthouseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C39E84DA228C4F7B00685652 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C39E84D9228C4F7B00685652 /* LighthouseKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C39E84AC228C458A00685652 /* lighthousepe_sdk_v2_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lighthousepe_sdk_v2_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39E84C3228C472700685652 /* LighthouseKit.framework in Frameworks */,
+				C39E84D8228C4F7B00685652 /* LighthouseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +95,7 @@
 				C39E84A8228C458A00685652 /* Sources */,
 				C39E84A9228C458A00685652 /* Frameworks */,
 				C39E84AA228C458A00685652 /* Resources */,
+				C39E84DA228C4F7B00685652 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
