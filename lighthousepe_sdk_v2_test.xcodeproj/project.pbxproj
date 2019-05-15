@@ -22,6 +22,7 @@
 		C39E84B6228C458D00685652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39E84B9228C458D00685652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39E84BB228C458D00685652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39E84C1228C460500685652 /* lighthousepe_sdk_v2_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lighthousepe_sdk_v2_test.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		C39E84AE228C458A00685652 /* lighthousepe_sdk_v2_test */ = {
 			isa = PBXGroup;
 			children = (
+				C39E84C1228C460500685652 /* lighthousepe_sdk_v2_test.entitlements */,
 				C39E84AF228C458A00685652 /* AppDelegate.swift */,
 				C39E84B1228C458A00685652 /* ViewController.swift */,
 				C39E84B3228C458A00685652 /* Main.storyboard */,
@@ -96,6 +98,14 @@
 				TargetAttributes = {
 					C39E84AB228C458A00685652 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K3WVV4RQH;
 				INFOPLIST_FILE = lighthousepe_sdk_v2_test/Info.plist;
@@ -300,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K3WVV4RQH;
 				INFOPLIST_FILE = lighthousepe_sdk_v2_test/Info.plist;
