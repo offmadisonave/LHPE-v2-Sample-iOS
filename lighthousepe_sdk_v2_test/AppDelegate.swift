@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        Lighthouse.setApplicationId("e9db5054-c275-4b55-9c0d-2e8fdcc57a15", clientKey: "d0801a6e-856c-4732-b0ab-eb0f1a645bfb", environment: LHEnvironmentStaging) {
+            (success: Bool, error: Error?) in
+            
+            print("LHPE Initialized, succes? " + String(success))
+            
+        }
+        
         return true
     }
 
