@@ -315,6 +315,7 @@
 				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K3WVV4RQH;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -338,6 +339,7 @@
 				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K3WVV4RQH;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
