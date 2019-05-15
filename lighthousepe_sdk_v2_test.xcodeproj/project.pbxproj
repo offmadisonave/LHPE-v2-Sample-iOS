@@ -14,6 +14,8 @@
 		C39E84BA228C458D00685652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B8228C458D00685652 /* LaunchScreen.storyboard */; };
 		C39E84D8228C4F7B00685652 /* LighthouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; };
 		C39E84D9228C4F7B00685652 /* LighthouseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C39E84DE228C503D00685652 /* EstimoteBluetoothScanning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84DC228C503D00685652 /* EstimoteBluetoothScanning.framework */; };
+		C39E84DF228C503D00685652 /* EstimoteProximitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84DD228C503D00685652 /* EstimoteProximitySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,8 @@
 		C39E84BB228C458D00685652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39E84C1228C460500685652 /* lighthousepe_sdk_v2_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lighthousepe_sdk_v2_test.entitlements; sourceTree = "<group>"; };
 		C39E84C2228C472700685652 /* LighthouseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LighthouseKit.framework; sourceTree = "<group>"; };
+		C39E84DC228C503D00685652 /* EstimoteBluetoothScanning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteBluetoothScanning.framework; sourceTree = "<group>"; };
+		C39E84DD228C503D00685652 /* EstimoteProximitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteProximitySDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39E84DE228C503D00685652 /* EstimoteBluetoothScanning.framework in Frameworks */,
 				C39E84D8228C4F7B00685652 /* LighthouseKit.framework in Frameworks */,
+				C39E84DF228C503D00685652 /* EstimoteProximitySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,8 @@
 		C39E84A3228C458A00685652 = {
 			isa = PBXGroup;
 			children = (
+				C39E84DC228C503D00685652 /* EstimoteBluetoothScanning.framework */,
+				C39E84DD228C503D00685652 /* EstimoteProximitySDK.framework */,
 				C39E84C2228C472700685652 /* LighthouseKit.framework */,
 				C39E84AE228C458A00685652 /* lighthousepe_sdk_v2_test */,
 				C39E84AD228C458A00685652 /* Products */,
