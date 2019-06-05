@@ -8,49 +8,85 @@
 
 import UIKit
 import LighthouseKit
+import EstimoteProximitySDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var proximityObserver: ProximityObserver!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // Initialize Estimote Proximity Observer
+        let cloudCredentials = CloudCredentials(appID: "sample-code-app-2hl", appToken: "371cf8655dbbc99a232726ac3df85401")
+        
+        self.proximityObserver = ProximityObserver(
+            credentials: cloudCredentials,
+            onError: { error in
+                print("proximity observer error: \(error)")
+        })
+        
+        // Initialize LHPE
         Lighthouse.setApplicationId("e9db5054-c275-4b55-9c0d-2e8fdcc57a15", clientKey: "d0801a6e-856c-4732-b0ab-eb0f1a645bfb", environment: LHEnvironmentStaging) {
             (success: Bool, error: Error?) in
             
-            print("LHPE Initialized, succes? " + String(success))
+            // Create Proximity Zones
+            if(success){
+                self.startBeaconing()
+            }
             
         }
         
         return true
     }
+    
+    func startBeaconing() {
+        Lighthouse.getBeaconProximityZones({
+            (zones: [LHBeaconProximityZone]?, error: Error?) in
+            
+            self.proximityObserver.stopObservingZones()
+            
+            var pzones = [ProximityZone]()
+            
+            for pz in zones! {
+                
+                let zone = ProximityZone(tag: pz.tag, range: ProximityRange(desiredMeanTriggerDistance: pz.range.doubleValue)!)
+                zone.onEnter = { context in
+                    Lighthouse.trackBeaconProximityZoneEntry(forProximityTag: context.tag)
+                }
+                zone.onExit = { context in
+                    Lighthouse.trackBeaconProximityZoneExit(forProximityTag: context.tag)
+                }
+                
+                pzones.append(zone)
+                
+            }
+            
+            self.proximityObserver.startObserving(pzones)
+            
+        })
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
         Lighthouse.applicationWillResignActive()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         Lighthouse.applicationDidEnterBackground()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         Lighthouse.applicationWillEnterForeground()
+        // beacon config may have changed, rebuild
+        startBeaconing()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         Lighthouse.applicationDidBecomeActive()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         Lighthouse.applicationWillTerminate()
     }
 

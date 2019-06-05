@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LHSignal.h"
+#import "LHBeaconProximityZone.h"
 
 FOUNDATION_EXPORT NSString *const LHEnvironmentLocal;
 FOUNDATION_EXPORT NSString *const LHEnvironmentDemo;
@@ -17,3 +18,4 @@ FOUNDATION_EXPORT NSString *const LHEnvironmentProduction;
 typedef void (^LHBooleanResultBlock)(BOOL succeeded, NSError *error);
 typedef void (^LHSignalResultBlock)(NSArray<LHSignal *> *result, NSError *error);
 typedef void (^LHIntegerResultBlock)(NSUInteger result, NSError *error);
+typedef void (^LHBeaconProximityZonesResultBlock)(NSArray<LHBeaconProximityZone *> *result, NSError *error);

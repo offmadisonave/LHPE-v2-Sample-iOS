@@ -36,8 +36,9 @@
 +(void) trackDeviceLaunch:(NSString *)signalId;
 
 // Beaconing
-+(void) startBeaconing;
-+(void) stopBeaconing;
++(void) getBeaconProximityZonesWithBlock:(LHBeaconProximityZonesResultBlock)block;
++(void) trackBeaconProximityZoneEntryForProximityTag:(NSString *)proximityTag;
++(void) trackBeaconProximityZoneExitForProximityTag:(NSString *)proximityTag;
 
 // Location Tracking
 +(void) startBackgroundLocationTracking;

@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C39530F122A83147001AAFFD /* LighthouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39530EF22A8313E001AAFFD /* LighthouseKit.framework */; };
+		C39530F222A83147001AAFFD /* LighthouseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39530EF22A8313E001AAFFD /* LighthouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C39530F522A832C8001AAFFD /* EstimoteProximitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39530F422A832C8001AAFFD /* EstimoteProximitySDK.framework */; };
+		C39530F722A832D1001AAFFD /* EstimoteBluetoothScanning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39530F622A832D0001AAFFD /* EstimoteBluetoothScanning.framework */; };
+		C39530F822A832E8001AAFFD /* EstimoteBluetoothScanning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39530F622A832D0001AAFFD /* EstimoteBluetoothScanning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C39530F922A832E8001AAFFD /* EstimoteProximitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39530F422A832C8001AAFFD /* EstimoteProximitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C39530FB22A83995001AAFFD /* SignalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39530FA22A83995001AAFFD /* SignalListViewController.swift */; };
+		C39530FD22A848E2001AAFFD /* SignalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39530FC22A848E2001AAFFD /* SignalDetailViewController.swift */; };
+		C395310022A84E18001AAFFD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39530FF22A84E18001AAFFD /* WebKit.framework */; };
 		C39E84B0228C458A00685652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39E84AF228C458A00685652 /* AppDelegate.swift */; };
 		C39E84B2228C458A00685652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39E84B1228C458A00685652 /* ViewController.swift */; };
 		C39E84B5228C458A00685652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B3228C458A00685652 /* Main.storyboard */; };
 		C39E84B7228C458D00685652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B6228C458D00685652 /* Assets.xcassets */; };
 		C39E84BA228C458D00685652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39E84B8228C458D00685652 /* LaunchScreen.storyboard */; };
-		C39E84D8228C4F7B00685652 /* LighthouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; };
-		C39E84D9228C4F7B00685652 /* LighthouseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C39E84C2228C472700685652 /* LighthouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +30,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C39E84D9228C4F7B00685652 /* LighthouseKit.framework in Embed Frameworks */,
+				C39530F822A832E8001AAFFD /* EstimoteBluetoothScanning.framework in Embed Frameworks */,
+				C39530F922A832E8001AAFFD /* EstimoteProximitySDK.framework in Embed Frameworks */,
+				C39530F222A83147001AAFFD /* LighthouseKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +40,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C39530EF22A8313E001AAFFD /* LighthouseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LighthouseKit.framework; sourceTree = "<group>"; };
+		C39530F422A832C8001AAFFD /* EstimoteProximitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteProximitySDK.framework; sourceTree = "<group>"; };
+		C39530F622A832D0001AAFFD /* EstimoteBluetoothScanning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteBluetoothScanning.framework; sourceTree = "<group>"; };
+		C39530FA22A83995001AAFFD /* SignalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalListViewController.swift; sourceTree = "<group>"; };
+		C39530FC22A848E2001AAFFD /* SignalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDetailViewController.swift; sourceTree = "<group>"; };
+		C39530FF22A84E18001AAFFD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C39E84AC228C458A00685652 /* lighthousepe_sdk_v2_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lighthousepe_sdk_v2_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E84AF228C458A00685652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39E84B1228C458A00685652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +54,6 @@
 		C39E84B9228C458D00685652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39E84BB228C458D00685652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39E84C1228C460500685652 /* lighthousepe_sdk_v2_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lighthousepe_sdk_v2_test.entitlements; sourceTree = "<group>"; };
-		C39E84C2228C472700685652 /* LighthouseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LighthouseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,19 +61,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39E84D8228C4F7B00685652 /* LighthouseKit.framework in Frameworks */,
+				C395310022A84E18001AAFFD /* WebKit.framework in Frameworks */,
+				C39530F122A83147001AAFFD /* LighthouseKit.framework in Frameworks */,
+				C39530F722A832D1001AAFFD /* EstimoteBluetoothScanning.framework in Frameworks */,
+				C39530F522A832C8001AAFFD /* EstimoteProximitySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C39530FE22A84E18001AAFFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39530FF22A84E18001AAFFD /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C39E84A3228C458A00685652 = {
 			isa = PBXGroup;
 			children = (
-				C39E84C2228C472700685652 /* LighthouseKit.framework */,
+				C39530F622A832D0001AAFFD /* EstimoteBluetoothScanning.framework */,
+				C39530F422A832C8001AAFFD /* EstimoteProximitySDK.framework */,
+				C39530EF22A8313E001AAFFD /* LighthouseKit.framework */,
 				C39E84AE228C458A00685652 /* lighthousepe_sdk_v2_test */,
 				C39E84AD228C458A00685652 /* Products */,
+				C39530FE22A84E18001AAFFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +105,8 @@
 				C39E84C1228C460500685652 /* lighthousepe_sdk_v2_test.entitlements */,
 				C39E84AF228C458A00685652 /* AppDelegate.swift */,
 				C39E84B1228C458A00685652 /* ViewController.swift */,
+				C39530FA22A83995001AAFFD /* SignalListViewController.swift */,
+				C39530FC22A848E2001AAFFD /* SignalDetailViewController.swift */,
 				C39E84B3228C458A00685652 /* Main.storyboard */,
 				C39E84B6228C458D00685652 /* Assets.xcassets */,
 				C39E84B8228C458D00685652 /* LaunchScreen.storyboard */,
@@ -96,8 +126,7 @@
 				C39E84A9228C458A00685652 /* Frameworks */,
 				C39E84AA228C458A00685652 /* Resources */,
 				C39E84DA228C4F7B00685652 /* Embed Frameworks */,
-				C39E84DB228C4FB100685652 /* ShellScript */,
-				C39E84E6228C56EA00685652 /* ShellScript */,
+				C39530F322A83166001AAFFD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -163,7 +192,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C39E84DB228C4FB100685652 /* ShellScript */ = {
+		C39530F322A83166001AAFFD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,23 +209,6 @@
 			shellPath = /bin/sh;
 			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
-		C39E84E6228C56EA00685652 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "pushd ${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/Frameworks/LighthouseKit.framework/Frameworks\nfor EACH in *.framework; do\necho \"-- signing ${EACH}\"\n/usr/bin/codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --entitlements \"${TARGET_TEMP_DIR}/${PRODUCT_NAME}.app.xcent\" --timestamp=none $EACH\ndone\npopd\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -204,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39530FB22A83995001AAFFD /* SignalListViewController.swift in Sources */,
 				C39E84B2228C458A00685652 /* ViewController.swift in Sources */,
+				C39530FD22A848E2001AAFFD /* SignalDetailViewController.swift in Sources */,
 				C39E84B0228C458A00685652 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +372,7 @@
 		C39E84BF228C458D00685652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +399,7 @@
 		C39E84C0228C458D00685652 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = lighthousepe_sdk_v2_test/lighthousepe_sdk_v2_test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
